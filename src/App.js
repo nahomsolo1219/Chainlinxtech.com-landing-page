@@ -6,6 +6,8 @@ import Products from './Components/ERP Product/Products'
 import Footer from './Components/Footer/Footer'
 import Erpheading from './Components/ERP Title/Erpheading';
 import Rmsproduct from './Components/RMS Product/Rmsproduct'
+import About_our_product from './Components/About our Products/About_our_product'
+import About_our_products_icons from './Components/About our Products icons/About_our_products_icons'
 
 
 function App() {
@@ -17,7 +19,10 @@ function App() {
     <Erpheading />
     <Products />
     <Rmsproduct />
+    <About_our_product />
+    <About_our_products_icons />
     <Footer />
+    
     
     
   </>

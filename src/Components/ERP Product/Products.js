@@ -2,6 +2,7 @@ import React from 'react';
 import './Products.css'
 import {  Container,  SimpleGrid, Stack,  Flex,  Text, Heading,  StackDivider,  useColorModeValue,  Image,  Icon,} from '@chakra-ui/react';
 import { IoAnalyticsSharp, IoLogoBitcoin, IoSearchSharp, IoAccessibility, IoWallet } from 'react-icons/io5';
+import ERPproductimg from '../../assets/ERP Product.png'
 
 
 interface FeatureProps {
@@ -67,11 +68,8 @@ const SplitWithImage: React.FC = () => {
         </Stack>
         <Flex>
           <Image
-            rounded={'md'}
             alt={'Enterprise Resource planning'}
-            src={
-              'https://img.freepik.com/free-vector/hand-drawn-flat-design-erp-illustration_23-2149379504.jpg?w=996&t=st=1690983022~exp=1690983622~hmac=ef095ea9e09cdc2da1c9eb4cd6862c4d44ce16d5ff565ed0d37605338e76305a'
-            }
+            src={ERPproductimg}
             objectFit={'cover'}
           />
         </Flex>

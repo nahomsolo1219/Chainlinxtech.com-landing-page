@@ -30,7 +30,7 @@ const SplitWithImage: React.FC = () => {
             rounded={'md'}
             alt={'Enterprise Resource planning'}
             src={
-              'https://img.freepik.com/free-vector/flat-printing-industry-illustration_23-2148887722.jpg?w=740&t=st=1690984840~exp=1690985440~hmac=2c72f568074f45e0a0542f8f48541205710e814977735c59ff8be089ff263fa7'
+              'https://img.freepik.com/free-vector/barcode-concept-illustration_114360-7032.jpg?w=740&t=st=1690987033~exp=1690987633~hmac=db86b92cda562882f5d3b147b635513d83932ad9d8d508ad71e2d0f39fbe10c3'
             }
             objectFit={'cover'}
           />

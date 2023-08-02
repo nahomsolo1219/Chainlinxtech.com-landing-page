@@ -2,7 +2,11 @@ import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Sectiontop from './Components/Section top/Sectiontop';
 import Aboutus from './Components/About us/Aboutus'
-import products from './Components/services/products'
+import Products from './Components/ERP Product/Products'
+import Footer from './Components/Footer/Footer'
+import Erpheading from './Components/ERP Title/Erpheading';
+import Rmsproduct from './Components/RMS Product/Rmsproduct'
+
 
 function App() {
   return (
@@ -10,7 +14,12 @@ function App() {
     <Navbar />
     <Sectiontop />
     <Aboutus />
-    <products />
+    <Erpheading />
+    <Products />
+    <Rmsproduct />
+    <Footer />
+    
+    
   </>
   );
 }

@@ -1,14 +1,22 @@
 import React from "react";
 import "./About_our_products_icons.css";
 import Customer_support  from '../../assets/customer_support-removebg-preview.png'
-import { Spacer, Flex, Card, CardHeader, CardBody, CardFooter, Image,Stack, Heading, Text, Divider, ButtonGroup, Button,} from "@chakra-ui/react";
+import { Spacer, Flex, Card, CardHeader, CardBody, CardFooter, Image,Stack, Heading, Text, SimpleGrid, Divider, ButtonGroup, Button, Box} from "@chakra-ui/react";
+import Userfriendly from '../../assets/User friendly card icon.png'
+import Container from 'react-bootstrap/container'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
+
+
 
 
 function About_our_products_icons() {
   return (
-    <div>
-      <Flex justifyContent="center" alignItems="center" height="100vh">
-        <Card maxW="sm">
+    <>
+    <div class="container">
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-12">
+    <Card maxW="sm">
           <CardBody fontFamily={'poppins, sans-serif'} >
             <Image 
               height={'220px'}
@@ -16,7 +24,7 @@ function About_our_products_icons() {
               alt="Chainlinx Technologies"
               borderRadius="lg"
             />
-            <Stack mt="6" spacing="3">
+            <Stack mt="6" spacing="1">
               <Heading size="md">Friendly customer Support</Heading>
               <Text>
               No matter the challenge you encounter, we are just a phone call or email away. From onboarding to troubleshooting and everything in between, we are with you every step of the way. 
@@ -24,11 +32,10 @@ function About_our_products_icons() {
             </Stack>
           </CardBody>
         </Card>
-
-        <Card maxW="sm" 
+    </div>
+    <div class="col-md-4 col-sm-6 col-12">
+    <Card maxW="sm" 
         border={'none'}
-        marginLeft={{ base: '0px', md: '15px' }}
-        marginTop={{ base: '15px', md: '0px' }}
         >
           <CardBody fontFamily={'poppins, sans-serif'}>
             <Image
@@ -43,12 +50,37 @@ function About_our_products_icons() {
               </Text>
             </Stack>
           </CardBody>
-          
-          
         </Card>
-      </Flex>
     </div>
+    <div class="col-md-4 col-sm-6 col-12">
+    <Card maxW="sm" 
+        border={'none'}
+        marginLeft={{ base: '0px', md: '15px' }}
+        marginTop={{ base: '15px', md: '0px' }}
+        >
+          <CardBody fontFamily={'poppins, sans-serif'}>
+            <Image
+              height={'200px'}
+              src={Userfriendly}
+              alt="Chainlinx Technologies"
+              borderRadius="lg"
+            />
+            <Stack mt="6" spacing="3">
+              <Heading size="md">User Friendly</Heading>
+              <Text>
+              At Chainlinx Technologies, we create user-friendly solutions tailored to your business needs, ensuring easy access and intuitive functionality for you.
+              </Text>
+            </Stack>
+          </CardBody>
+        </Card>
+    </div>
+  </div>
+</div>
+    </>
+       
+
   );
 }
 
-export default About_our_products_icons;
+export default About_our_products_icons
+
